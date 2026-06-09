@@ -24,6 +24,10 @@
     "express": ">=4",
     "react": ">=18"
   },
+  "peerDependenciesMeta": {
+    "express": { "optional": true },
+    "react": { "optional": true }
+  },
   "devDependencies": {
     "@types/express": "^5.0.0",
     "express": "^5.1.0",
