@@ -1,0 +1,8 @@
+{
+  "id": "hello-world",
+  "name": "Hello World",
+  "surfaces": { "backend": true, "cms": true, "site": false },
+  "requiredRole": "admin",
+  "minBackendVersion": "0.1.0",
+  "minCmsVersion": "0.1.0"
+}

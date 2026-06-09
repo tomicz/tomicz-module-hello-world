@@ -1,0 +1,32 @@
+{
+  "name": "@tomicz/module-hello-world",
+  "version": "0.1.0",
+  "description": "Hello-world reference module for the Tomicz CMS — the smallest end-to-end installable per-org module (guides/modules.md, ADR-0008).",
+  "license": "UNLICENSED",
+  "exports": {
+    "./backend": {
+      "types": "./dist/backend/index.d.ts",
+      "default": "./dist/backend/index.js"
+    },
+    "./cms": "./src/cms/index.tsx",
+    "./module.json": "./module.json"
+  },
+  "files": [
+    "dist/backend",
+    "src",
+    "module.json"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "typecheck": "tsc -p tsconfig.json --noEmit"
+  },
+  "peerDependencies": {
+    "express": ">=4",
+    "react": ">=18"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.0",
+    "express": "^5.1.0",
+    "typescript": "^5.7.2"
+  }
+}
