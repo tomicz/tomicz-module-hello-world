@@ -5,14 +5,15 @@
   "license": "UNLICENSED",
   "exports": {
     "./backend": {
-      "types": "./dist/backend/index.d.ts",
-      "default": "./dist/backend/index.js"
+      "types": "./backend/index.d.ts",
+      "default": "./backend/index.js"
     },
-    "./cms": "./src/cms/index.tsx",
+    "./cms": "./cms/index.tsx",
     "./module.json": "./module.json"
   },
   "files": [
-    "dist/backend",
+    "backend",
+    "cms",
     "src",
     "module.json"
   ],
